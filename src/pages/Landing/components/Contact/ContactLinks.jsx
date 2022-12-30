@@ -19,17 +19,17 @@ const ContactLinks = () => {
 		}}>
 			<LinkedInIcon aria-label="linkedin.com/rishabhguha" onClick={() => window.open('https://www.linkedin.com/in/rishabh-guha-35ba34183/')} 
 			sx={{
-				mx:'4px', 
+				mx:'12px', 
 				cursor:'pointer'
 			}}/>
 			<GitHubIcon aria-label="github.com/rishabhguha" onClick={() => window.open('https://github.com/rishabhguha')}
 			sx={{
-				mx:'4px', 
+				mx:'12px', 
 				cursor:'pointer'
 			}}/>
 			<Instagram aria-label="instagram.com/_guhaaa_/" onClick={() => window.open('https://www.instagram.com/_guhaaa_/?hl=en')}
 			sx={{
-				mx:'4px', 
+				mx:'12px', 
 				cursor:'pointer'
 			}}/>
 		</Box>
