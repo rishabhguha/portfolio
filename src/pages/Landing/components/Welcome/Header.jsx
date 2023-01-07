@@ -10,6 +10,9 @@ const Header = () => {
 			<Typography variant="h1" gutterBottom 
 			sx={{ 
 				fontSize : '5rem',
+				[theme.breakpoints.down('md')]: {
+					fontSize: '4rem'
+				},
 				[theme.breakpoints.down('sm')]: {
 			      fontSize : '3rem',
 			    },

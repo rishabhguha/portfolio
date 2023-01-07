@@ -1,12 +1,10 @@
 import React from 'react';
 import { Container } from '@mui/material';
-import { useTheme } from '@mui/material/styles';
 import Header from './Header'
 import Animations from './Animations'
 
 
-const Welcome = () => {
-	const theme = useTheme();
+const Welcome = ({theme}) => {
 
 	return (
 		<Container disableGutters={true} maxWidth={false} 

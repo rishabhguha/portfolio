@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import { Box, Button } from '@mui/material';
 import { pdfjs, Document, Page } from 'react-pdf'
-import { PDFDownloadLink } from '@react-pdf/renderer';
+import { PDFDownloadLink, StyleSheet } from '@react-pdf/renderer';
 import CV from ".//pdf/CV.pdf";
 import 'react-pdf/dist/esm/Page/TextLayer.css';
 import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
+import './/style.css';
 
-const Pdf = () => {
+const Pdf = ({theme}) => {
+	pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 	const [numPages, setNumPages] = useState(null);
 	const [pageNumber, setPageNumber] = useState(1);
 
@@ -16,7 +17,7 @@ const Pdf = () => {
 	}
 
 	return (
-		<Box>
+		<Box id="PDF">
 			<Box sx={{
 				borderRadius: '20px',
 				boxShadow: '2',

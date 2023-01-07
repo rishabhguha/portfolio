@@ -38,22 +38,27 @@ const Consts = {
 	SKILLS: [
 		{
 			name: "HTML",
+			shortName: "HTML",
 			level: '95%',
 		},
 		{
 			name: "CSS(SCSS/SASS)",
+			shortName: "CSS",
 			level: '95%',
 		},
 		{
 			name: "JavaScript",
+			shortName: "JS",
 			level: '90%',
 		},
 		{
-			name: "ReactJS + Redux",
+			name: "ReactJS/Redux",
+			shortName: "ReactJS",
 			level: '80%',
 		},
 		{
 			name: "Algos(Python) ",
+			shortName: "Algos",
 			level: '70%',
 		}
 	]

@@ -117,7 +117,7 @@ const Navbar = () => {
               color: `${textColor}`
             }}>
               {Consts.NAVLINKS.map((item) => (
-                <HashLink smooth to={item.link} className='navlinks'>
+                <HashLink smooth to={item.link} className='navlinks' key={item.link}>
                   <ListItem key={item.text} disablePadding>
                     <ListItemButton sx={{ textAlign: 'center' }}>
                       <ListItemText primary={item.text} sx={{'&.MuiListItemText-root' : {margin: '0', minWidth:"100px"}}}/>

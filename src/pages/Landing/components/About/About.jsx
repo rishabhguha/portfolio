@@ -3,7 +3,7 @@ import { Container, Box, Typography } from '@mui/material';
 import AboutContent from './AboutContent';
 
 
-const About = () => {
+const About = ({theme}) => {
 	return (
 		<Container disableGutters={true} maxWidth={false} id='about'
 		sx={{ 
@@ -21,7 +21,10 @@ const About = () => {
 				<Typography variant="h1" gutterBottom 
 				sx={{ 
 					fontSize : '5rem',
-					color: 'rgba(253,74,45,1)'
+					color: 'rgba(253,74,45,1)',
+					[theme.breakpoints.down('sm')]: {
+						fontSize: '4rem'
+					}
 					
 				}}>
 		        	About Me

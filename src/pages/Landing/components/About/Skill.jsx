@@ -1,9 +1,22 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Box, Typography } from '@mui/material';
+import { useTheme } from '@mui/material/styles';
 
 
-const Skill = ({ skillName, skillLevel }) => {
+const Skill = ({ skillName, skillLevel, shortName}) => {
+	let width = (window.innerWidth > 0) ? window.innerWidth : window.width;
+	const [name, setName] = useState(skillName);
+	const theme = useTheme();
 
+	useEffect(() => {
+		if(width > theme.breakpoints.values['md']){
+			setName(skillName)
+		}
+		else{
+			setName(shortName)
+		}
+	},[width])
+ 
 	return (
 		<Box sx={{
 			display: 'flex',
@@ -15,22 +28,28 @@ const Skill = ({ skillName, skillLevel }) => {
 		}}>
 			<Typography  variant="subtitle1"
 			sx={{
-				display: 'flex',
+				display: 'inline-flex',
+				width: '30%',
 				justifyContent: 'end',
-				flexBasis: '30%',
 				height: '100%',
 				color: 'red',
-				paddingRight: '10px'
+				paddingRight: '10px',
+				[theme.breakpoints.down('sm')]: {
+					width: '20%'
+				}
 			}}>
-				{skillName}
+				{name}
 			</Typography>
 			<Box sx={{
 				display: 'inline-block',
 				height: '100%',
-				flexBasis: '70%',
+				width: '70%',
 				background: 'rgba(46, 194, 58, 0.1)',
 				borderRadius: '10px',
-				marginBottom: '5px'
+				marginBottom: '5px',
+				[theme.breakpoints.down('sm')]: {
+					width: '80%'
+				}
 			}}>
 				<Box sx={{
 					display: 'inline-block',

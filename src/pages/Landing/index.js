@@ -8,7 +8,7 @@ import Contact from './components/Contact';
 import About from './components/About';
 
 
-const Landing = () => {
+const Landing = ({}) => {
 	const theme = createTheme({
   	typography: {
     	fontFamily: [
@@ -19,11 +19,11 @@ const Landing = () => {
 
 	return (
 		<ThemeProvider theme={theme}>
-			<Navbar/>
-			<Welcome/>
-			<About/>
-			<Resume/>
-			<Contact/>
+			<Navbar theme={theme}/>
+			<Welcome theme={theme}/>
+			<About theme={theme}/>
+			<Resume theme={theme}/>
+			<Contact theme={theme}/>
 		</ThemeProvider>
 	)
 }

@@ -13,7 +13,7 @@ This project was created using React and Material UI. Feel free to re-use this t
  3. In the project directory, run `npm start`
 
 Runs the app in the development mode.
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Open [http://localhost:3000/show-off/](http://localhost:3000/show-off/) to view it in your browser.
 
 
 ## Technologies used
