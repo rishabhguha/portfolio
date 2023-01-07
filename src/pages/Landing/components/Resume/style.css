@@ -1,6 +1,7 @@
-
-#PDF .react-pdf__Page__canvas{
-	margin: 0 auto !important;
-	width: 100% !important;
-	width: 100% !important;
+@media (max-width:600px)  {
+	#PDF .react-pdf__Page__canvas{
+		margin: 0 auto !important;
+		width: 100% !important;
+		height: 100% !important;
+	}
 }

@@ -12,7 +12,7 @@ const Animations = () => {
 			height:'100%', 
 			maxWidth: 800, 
 			position:'relative',
-			[theme.breakpoints.down('sm')]: {
+			[theme.breakpoints.down('md')]: {
 			    display: 'none'
 			},
 		}} >
