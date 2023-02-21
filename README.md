@@ -2,7 +2,7 @@
 
 This project was created using React and Material UI. Feel free to re-use this template with your own adaptations. 
 
-### This website is live at [https://rishabhguha.github.io/show-off](https://rishabhguha.github.io/show-off)
+### This website is live at [https://rishabhguha.github.io/portfolio](https://rishabhguha.github.io/portfolio)
 
 ## Steps to run on local
 
@@ -13,7 +13,7 @@ This project was created using React and Material UI. Feel free to re-use this t
  3. In the project directory, run `npm start`
 
 Runs the app in the development mode.
-Open [http://localhost:3000/show-off/](http://localhost:3000/show-off/) to view it in your browser.
+Open [http://localhost:3000/portfolio/](http://localhost:3000/portfolio/) to view it in your browser.
 
 
 ## Technologies used
