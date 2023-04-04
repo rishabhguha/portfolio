@@ -1,8 +1,9 @@
 import React from 'react'
 import { Container, Typography, Box } from '@mui/material'
-import Grid from './Grid'
+import Content from './Content'
+import Consts from '../../../../consts';
 
-const Projects = () => {
+const Projects = ({theme}) => {
 	return (
 
 		<Container disableGutters={true} maxWidth={false} id='projects'
@@ -14,7 +15,8 @@ const Projects = () => {
 			padding:'64px 20px',
 			minHeight: '100vh',
 			height: 'fit-content',
-			color: 'rgba(253,74,45,1)',
+			color: `${Consts.PALETTE.primary}`,
+			border: `10px solid ${Consts.PALETTE.primary}`,
 			}}>
 
 			<Box height="max-content">
@@ -25,7 +27,7 @@ const Projects = () => {
 		        	Projects
 		      	</Typography>
 			</Box>
-			<Grid/>
+			<Content/>
 		</Container>
 	)	
 }

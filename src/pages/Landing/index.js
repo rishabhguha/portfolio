@@ -3,7 +3,7 @@ import { ThemeProvider, createTheme } from '@mui/material/styles';
 import Welcome from './components/Welcome';
 import Navbar from './components/Navbar';
 import Resume from './components/Resume';
-// import Projects from './components/Projects';
+import Projects from './components/Projects';
 import Contact from './components/Contact';
 import About from './components/About';
 
@@ -22,6 +22,7 @@ const Landing = ({}) => {
 			<Navbar theme={theme}/>
 			<Welcome theme={theme}/>
 			<About theme={theme}/>
+			<Projects theme={theme}/>
 			<Resume theme={theme}/>
 			<Contact theme={theme}/>
 		</ThemeProvider>

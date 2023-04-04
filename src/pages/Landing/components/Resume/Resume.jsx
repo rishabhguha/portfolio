@@ -16,7 +16,6 @@ const Resume = ({theme}) => {
 			minHeight: '100vh',
 			height: 'fit-content',
 			color: 'white',
-			border: '10px solid rgba(253,74,45,1)',
 			}}>
 
 			<Box height="max-content">

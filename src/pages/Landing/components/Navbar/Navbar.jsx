@@ -52,8 +52,8 @@ const Navbar = () => {
       
       <List>
         {Consts.NAVLINKS.map((item) => (
-          <HashLink smooth to={item.link} className='navlinks'>
-            <ListItem key={item.text} disablePadding>
+          <HashLink key={item.text} smooth to={item.link} className='navlinks'>
+            <ListItem disablePadding>
               <ListItemButton sx={{ textAlign: 'center' }}>
                 <ListItemText primary={item.text}/>
               </ListItemButton>

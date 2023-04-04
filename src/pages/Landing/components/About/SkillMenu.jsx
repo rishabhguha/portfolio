@@ -21,7 +21,7 @@ const SkillMenu = () => {
 				flexDirection: 'column',
 				
 			}}>
-				<Box color='blue' sx={{
+				<Box color={Consts.PALETTE.highlight} sx={{
 					// width: '70%',
 					margin: '0px -4% 0px 26%',
 					display: 'flex',
@@ -40,7 +40,7 @@ const SkillMenu = () => {
 				</Box>
 				<Box sx={{
 					height: '10px',
-					border: '1px solid rgb(253,74,45)',
+					border: `1px solid ${Consts.PALETTE.primary}`,
 					borderRadius: '5px 5px 0px 0px',
 					borderBottom: 'none',
 					margin: '5px 5px 10px 5px',

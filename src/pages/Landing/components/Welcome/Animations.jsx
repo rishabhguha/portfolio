@@ -27,8 +27,8 @@ const Animations = () => {
 				bgcolor='white'
 				component={motion.div}
 				animate={{
-			        scaleX: ['1', '1,2', '0.8', '1'],
-			        scaleY: ['1', '1,2', '0.8', '1'],
+			        scaleX: [1, 1.2, 0.8, 1],
+			        scaleY: [1, 1.2, 0.8, 1]
 			    }}
 				transition={{
 			        duration: 2,
@@ -64,8 +64,6 @@ const Animations = () => {
 				top='20%'
 				height='0'
 				width='0'
-				// borderRadius='20px'
-				// bgcolor='white'
 				borderLeft = '60px solid transparent'
 				borderRight = '60px solid transparent'
 				borderBottom = '80px solid white'

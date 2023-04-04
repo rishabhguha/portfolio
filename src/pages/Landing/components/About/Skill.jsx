@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Box, Typography } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
+import Consts from '../../../../consts';
 
 
 const Skill = ({ skillName, skillLevel, shortName}) => {
@@ -44,7 +45,7 @@ const Skill = ({ skillName, skillLevel, shortName}) => {
 				display: 'inline-block',
 				height: '100%',
 				width: '70%',
-				background: 'rgba(46, 194, 58, 0.1)',
+				background: `${Consts.PALETTE.skillBackground}`,
 				borderRadius: '10px',
 				marginBottom: '5px',
 				[theme.breakpoints.down('sm')]: {
@@ -55,7 +56,7 @@ const Skill = ({ skillName, skillLevel, shortName}) => {
 					display: 'inline-block',
 					height: '100%',
 					width: `${skillLevel}`,
-					background: 'rgba(46, 194, 58)',
+					background: `${Consts.PALETTE.skill}`,
 					borderRadius: '10px',
 				}}>
 				</Box>

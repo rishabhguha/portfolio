@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Box, Typography } from '@mui/material';
 import AboutContent from './AboutContent';
-
+import Consts from '../../../../consts';
 
 const About = ({theme}) => {
 	return (
@@ -21,7 +21,7 @@ const About = ({theme}) => {
 				<Typography variant="h1" gutterBottom 
 				sx={{ 
 					fontSize : '5rem',
-					color: 'rgba(253,74,45,1)',
+					color: `${Consts.PALETTE.primary}`,
 					[theme.breakpoints.down('sm')]: {
 						fontSize: '4rem'
 					}

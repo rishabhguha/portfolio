@@ -6,6 +6,7 @@ import { useTheme } from '@mui/material/styles';
 import SkillMenu from './SkillMenu';
 import Description from './Description';
 import AboutPicture from './img/about.jpg';
+import Consts from '../../../../consts';
 
 
 const AboutContent = () => {
@@ -16,7 +17,7 @@ const AboutContent = () => {
 			height: '200px',
 			width: '5px',
 			borderRadius: '10px',
-			bgcolor: 'rgba(253,74,45,1)',
+			bgcolor: `${Consts.PALETTE.primary}`,
 			[theme.breakpoints.down('sm')]: {
 				height: '5px',
 				width: '70%',
