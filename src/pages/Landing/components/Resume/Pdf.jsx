@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Box, Button } from '@mui/material';
 import { pdfjs, Document, Page } from 'react-pdf'
 import { PDFDownloadLink, StyleSheet } from '@react-pdf/renderer';
-import CV from ".//pdf/CV.pdf";
+import CV from ".//pdf/Rishabh_Guha_Resume.pdf";
 import 'react-pdf/dist/esm/Page/TextLayer.css';
 import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
 import './/style.css';

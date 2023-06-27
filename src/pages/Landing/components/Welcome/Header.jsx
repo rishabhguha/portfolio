@@ -18,7 +18,7 @@ const Header = () => {
 			    },
 				
 			}}>
-	        	Hello! I am Rishabh, a passionate and curious web developer!
+	        	Hello! I am Rishabh, a passionate and curious software developer!
 	      	</Typography>
 	    </Box>
 	)

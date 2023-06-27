@@ -45,7 +45,7 @@ const Consts = {
 		{
 			link: "https://www.animefillerlist.com/shows/one-piece",
 			header: "Portfolio",
-			description: "This website has been designed and developed using ReactJS, MaterialUI, and Framer Motion to create a modern, sleek and interactive user interface. The homepage features a hero section with a dynamic background animation, introducing myself and highlighting my core skills and expertise. The skills section showcases my technical skills in a visually engaging way, using progress bars to indicate my proficiency levels. Overall, this portfolio website was designed to showcase my skills and expertise in a clean, modern, and interactive way. It not only serves as an introduction to my work but also as a demonstration of my technical abilities using the latest web development technologies.",
+			description: "This website has been designed and developed using ReactJS, MaterialUI, and Framer Motion to create a modern, sleek and interactive user interface. The homepage features a hero section with a dynamic background animation, introducing myself and highlighting my core skills and expertise. The skills section showcases my technical skills in a visually engaging way, using progress bars to indicate my proficiency levels. Overall, thie website not only serves as an introduction to my work but also as a demonstration of my technical abilities using the latest web development technologies.",
 			images: [
 				"portfolio_1.png",
 				"portfolio_2.png",
@@ -68,17 +68,17 @@ const Consts = {
 		{
 			name: "JavaScript",
 			shortName: "JS",
-			level: '90%',
+			level: '95%',
 		},
 		{
 			name: "ReactJS/Redux",
 			shortName: "ReactJS",
-			level: '80%',
+			level: '85%',
 		},
 		{
 			name: "Algos(Python) ",
 			shortName: "Algos",
-			level: '70%',
+			level: '75%',
 		}
 	]
 }
