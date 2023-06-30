@@ -14,7 +14,7 @@ const AboutContent = () => {
 
 	const Divider = (props) => (
 		<Box sx={{
-			height: '200px',
+			height: '300px',
 			width: '5px',
 			borderRadius: '10px',
 			bgcolor: `${Consts.PALETTE.primary}`,

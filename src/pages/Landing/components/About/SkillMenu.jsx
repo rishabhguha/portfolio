@@ -1,60 +1,54 @@
-import React from 'react';
-import { Box, Typography } from '@mui/material';
+import React, { useState } from 'react';
+import { Box, Typography, Button } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 
-import Skill from './Skill';
+import SkillTab from './SkillTab';
 import Consts from '../../../../consts';
 
 const SkillMenu = () => {
 	const theme = useTheme();
+	const [activeTab, setActiveTab] = useState(0)
+
+	// mapping for tabs to keys in Consts.SKILLS
+	const tabToKey = {
+		0: "LANGUAGES",
+		1: "FRAMEWORKS"
+	}
+
 
 	return (
 		<Box sx={{
 			width: '100%',
 			px: '50px',
+			minHeight: '310px',
 			[theme.breakpoints.down('sm')]: {
 				px: '0',
 			}
 		}}>
 			<Box sx={{
 				display: 'flex',
-				flexDirection: 'column',
-				
+				justifyContent: 'space-around',
+				px: '50px', 
+				mb: '20px',
+				[theme.breakpoints.down('sm')]: {
+					px: '0px'
+				}		
 			}}>
-				<Box color={Consts.PALETTE.highlight} sx={{
-					// width: '70%',
-					margin: '0px -4% 0px 26%',
-					display: 'flex',
-					justifyContent: 'space-between',
-					alignItems: 'end',
-					[theme.breakpoints.down('sm')]: {
-						margin: '0px -4% 0px 16%',
-					}
+				{/* Set activeTab to be one of the */}
+				<Button onClick={() => {setActiveTab(0)}} sx={{
+					fontSize: '20px',
+					color: `${Consts.PALETTE.primary}`
 				}}>
-					<Typography variant="caption" display="block" width="100px" textAlign='center'>
-						I will have to learn this
-					</Typography>
-					<Typography variant="caption" display="block" width="100px" textAlign='center'>
-						I am great at this!
-					</Typography>
-				</Box>
-				<Box sx={{
-					height: '10px',
-					border: `1px solid ${Consts.PALETTE.primary}`,
-					borderRadius: '5px 5px 0px 0px',
-					borderBottom: 'none',
-					margin: '5px 5px 10px 5px',
-					marginLeft: '30%',
-					[theme.breakpoints.down('sm')]: {
-						marginLeft: '20%',
-					}
-				}}/>
+					Languages
+				</Button>
+				<Button onClick={() => {setActiveTab(1)}} sx={{
+					fontSize: '20px',
+					color: `${Consts.PALETTE.primary}`
+				}}>
+					Frameworks
+				</Button>
 			</Box>
-			<>
-				{Consts.SKILLS.map((item) => (
-					<Skill skillName={item.name} shortName={item.shortName} skillLevel={item.level} key={item.shortName}/>
-				))}
-			</>	
+			<SkillTab skills={Consts.SKILLS[tabToKey[activeTab]]}/>
 		</Box>
 	)
 }

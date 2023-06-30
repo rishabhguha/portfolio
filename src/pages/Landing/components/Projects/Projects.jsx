@@ -23,6 +23,9 @@ const Projects = ({theme}) => {
 				<Typography variant="h1" gutterBottom 
 				sx={{ 
 					fontSize : '5rem',
+					[theme.breakpoints.down('sm')]: {
+						fontSize: '4rem'
+					}
 				}}>
 		        	Projects
 		      	</Typography>

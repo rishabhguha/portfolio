@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { Box , Typography } from '@mui/material';
-import Consts from '../../../../consts';
+import { useTheme } from '@mui/material/styles';
 
+import Consts from '../../../../consts';
 import ProjectBody from './ProjectBody';
 
 const Content = () => {
+	const theme = useTheme()
 
 	const [activeTab, setActiveTab] = useState(0)
 
@@ -47,13 +49,25 @@ const Content = () => {
 		<Box sx={{
 			display: 'flex',
 			alignItems: 'center',
-			width: '100%'
+			width: '100%',
+			[theme.breakpoints.down('md')]: {
+				flexDirection: 'column'
+			}
 		}}>
 			<Box sx={{
 				width: '20%',
 				display: 'flex',
 				flexDirection: 'column',
-				alignItems: 'center'
+				alignItems: 'center',
+				[theme.breakpoints.down('md')]: {
+					width: '80%',
+					flexDirection: 'row',
+					justifyContent: 'space-around'
+				},
+				[theme.breakpoints.down('sm')]: {
+					flexDirection: 'column',
+					mb: '20px'
+				}
 			}}>
 				{Consts.PROJECTS.map((item,i) => (
 					<>
@@ -65,7 +79,7 @@ const Content = () => {
 					</>
 				))}
 			</Box>
-			<ProjectBody project={Consts.PROJECTS[activeTab]}/>
+			<ProjectBody project={Consts.PROJECTS[activeTab]} key={activeTab}/>
 		</Box>
 	)
 }

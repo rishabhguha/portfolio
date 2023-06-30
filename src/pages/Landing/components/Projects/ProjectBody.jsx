@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { Box , Typography, Paper } from '@mui/material';
-import Carousel from 'react-material-ui-carousel'
+import Carousel from 'react-material-ui-carousel';
+
+import { useTheme } from '@mui/material/styles';
 import Consts from '../../../../consts';
 
-const ProjectBody = ({project}) => {
+const ProjectBody = ({project,key}) => {
+	const theme = useTheme();
 
 	const Image = (props) => (
 		<Box component="img" key={props.bgImg}
@@ -13,6 +16,10 @@ const ProjectBody = ({project}) => {
 			// margin: '0 auto',
 			height: '350px',
 			width: '70%',
+			[theme.breakpoints.down('sm')]: {
+				height: '250px',
+				width: '90%'
+			}
 		}}>
 			{props.children}
 		</Box>
@@ -22,15 +29,19 @@ const ProjectBody = ({project}) => {
 		<Box sx={{
 			width: '80%',
 			padding: '20px',
-			// display: 'flex',
-			// flexDirection: 'column',
-			// justifyContent: 'center',
 			minHeight: '500px',
 			maxHeight: '500px',
 			overflow: 'auto',
-			border: '1px solid red'
+			border: `1px solid ${Consts.PALETTE.primary}`,
+			[theme.breakpoints.down('sm')]: {
+				width: '100%'
+			}
 		}}>
-			<Typography variant='h3' gutterBottom>
+			<Typography variant='h3' gutterBottom sx={{
+				[theme.breakpoints.down('sm')]: {
+					fontSize: '2.5rem'
+				}
+			}}>
 				{project.header}
 			</Typography>
 			<Typography variant='caption'>
@@ -50,7 +61,7 @@ const ProjectBody = ({project}) => {
 	                		display: 'flex',
 	                		justifyContent: 'center'
 	                	}}>
-	                		<Image key={i} bgImg={image} />
+	                		<Image key={key} bgImg={image} />
 	                	</Box>
 	                	 )
 	            }

@@ -54,33 +54,63 @@ const Consts = {
 
 		}
 	],
-	SKILLS: [
-		{
-			name: "HTML",
-			shortName: "HTML",
-			level: '95%',
-		},
-		{
-			name: "CSS(SCSS/SASS)",
-			shortName: "CSS",
-			level: '95%',
-		},
-		{
-			name: "JavaScript",
-			shortName: "JS",
-			level: '95%',
-		},
-		{
-			name: "ReactJS/Redux",
-			shortName: "ReactJS",
-			level: '85%',
-		},
-		{
-			name: "Algos(Python) ",
-			shortName: "Algos",
-			level: '75%',
-		}
-	]
+	SKILLS: {
+		LANGUAGES: [
+			{
+				name: "HTML",
+				shortName: "HTML",
+				level: '95%',
+			},
+			{
+				name: "CSS",
+				shortName: "CSS",
+				level: '95%',
+			},
+			{
+				name: "JavaScript",
+				shortName: "JS",
+				level: '95%',
+			},
+			{
+				name: "Python(Algos)",
+				shortName: "Python",
+				level: '80%',
+			},
+			{
+				name: "Java",
+				shortName: "Java",
+				level: '70%',
+			}
+		],
+		FRAMEWORKS: [
+			{
+				name: "ReactJS/Redux",
+				shortName: "React",
+				level: '90%',
+			},
+			{
+				name: "MaterialUI",
+				shortName: "MUI",
+				level: '85%',
+			},
+			{
+				name: "VueJS",
+				shortName: "VueJS",
+				level: '75%',
+			},
+			{
+				name: "Express",
+				shortName: "Express",
+				level: '75%',
+			},
+			{
+				name: "Springboot",
+				shortName: "SB",
+				level: '65%',
+			},
+		]
+	}
+	
 }
 
 export default Consts
