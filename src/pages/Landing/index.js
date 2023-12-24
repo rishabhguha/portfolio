@@ -7,26 +7,26 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import About from './components/About';
 
-
 const Landing = ({}) => {
-	const theme = createTheme({
-  	typography: {
-    	fontFamily: [
-      		'Fira Code',
-      		'monospace',
-    	].join(','),
-	},});
+  const theme = createTheme({
+    typography: {
+      fontFamily: ['Fira Code', 'monospace'].join(','),
+      card: {
+        fontFamily: ['Pacifico', 'cursive'].join(','),
+      },
+    },
+  });
 
-	return (
-		<ThemeProvider theme={theme}>
-			<Navbar theme={theme}/>
-			<Welcome theme={theme}/>
-			<About theme={theme}/>
-			<Projects theme={theme}/>
-			<Resume theme={theme}/>
-			<Contact theme={theme}/>
-		</ThemeProvider>
-	)
-}
+  return (
+    <ThemeProvider theme={theme}>
+      <Navbar theme={theme} />
+      <Welcome theme={theme} />
+      <About theme={theme} />
+      <Projects theme={theme} />
+      <Resume theme={theme} />
+      <Contact theme={theme} />
+    </ThemeProvider>
+  );
+};
 
-export default Landing
+export default Landing;
